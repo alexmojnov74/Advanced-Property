@@ -198,8 +198,8 @@ app.post("/api/send", function(req, res){
   service: 'gmail',
 
   auth: {
-      user: MAIL_LOGIN || 'alexmojnov@gmail.com', // generated ethereal user
-      pass: MAIL_PASS || '6464693500aA!'  // generated ethereal password
+      user: 'alexmojnov@gmail.com', // generated ethereal user
+      pass: '6464693500aA!'  // generated ethereal password
   },
 //   tls:{
 //     rejectUnauthorized:false
