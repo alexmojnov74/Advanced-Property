@@ -191,19 +191,18 @@ app.post("/api/send", function(req, res){
     // const output2 = JSON.stringify(mailerobject)
  // create reusable transporter object using the default SMTP transport
 
- var MAIL_LOGIN = process.env.MAIL_LOGIN 
- var MAIL_PASS = process.env.MAIL_PASS
+
 
  let transporter = nodemailer.createTransport({
-  service: 'gmail',
-
+  host: 'smtp.mailgun.org',
+  port: 587,
   auth: {
-      user: 'alexmojnov@gmail.com', // generated ethereal user
-      pass: '6464693500aA!'  // generated ethereal password
+      user: 'postmaster@sandboxf87a39b38f6e4a9088a3f7e9479c4232.mailgun.org', // generated ethereal user
+      pass: 'd547583d60091c4905ad4f072b756f9f-bbbc8336-9e426c50'  // generated ethereal password
   },
-//   tls:{
-//     rejectUnauthorized:false
-//   }
+  tls:{
+    rejectUnauthorized:false
+  }
 });
 
 // setup email data with unicode symbols
