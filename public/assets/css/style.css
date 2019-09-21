@@ -1,0 +1,342 @@
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
+a:visited {
+  text-decoration: none;
+  color: #ffffff;
+}
+a:active {
+  text-decoration: none;
+  color: #ffffff;
+}
+.td1 {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 16px;
+  white-space: nowrap;
+  
+}
+
+.td2 {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 16px;
+  
+}
+
+th {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+.hed3 {
+  font-family: 'Livvic', sans-serif;
+}
+.htitle {
+  font-family: 'Titillium Web', sans-serif;
+  text-shadow: 3px 3px 3px black;
+  color: white;
+}
+
+.contnav {
+  width: 100%;
+  border-bottom: 7px solid #f8851a;
+  background-color: #ffffff;
+}
+
+.imgcont {
+    background-image: url('../images/bedgirl.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent !important;
+    height: 800px;
+    top:0;
+    padding-top: 100px;
+   
+}
+
+.register-content {
+  background-image: url('../images/4.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent !important;
+  height: 800px;
+  top:0;
+  padding-top: 100px;
+ 
+}
+.col3 {
+  padding: 0px;
+}
+
+.tent {
+  font-family: 'Titillium Web', sans-serif;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  height: 350px;
+}
+
+.tent1 {
+  font-family: 'Titillium Web', sans-serif;
+  text-align: center;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  height: 350px;
+  border: 1px solid black;
+  padding:20px;
+  
+}
+
+.tent2 {
+  font-family: 'Titillium Web', sans-serif;
+  text-align: left;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  height: 350px;
+  border: 1px solid black;
+  margin-left: 10px;
+  margin-top: 40px;
+  box-shadow: 5px 5px 10px black;
+}
+.loginput {
+  width: 80%;
+  margin: auto;
+  padding-bottom: 5px;
+}
+
+.contmain {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.nav-item {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #f8851a;
+}
+
+#myVideo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translate(-50%, -50%);
+}
+
+.content {
+  
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  height: 40%;
+}
+
+.search {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+.col-2 {
+  padding-bottom: 50px;
+}
+
+.form-control {
+  border: 1px solid black;
+}
+
+.input-group-text {
+  border: 1px solid black;
+}
+
+.card-text {
+  font-family: 'Titillium Web', sans-serif;
+  color: black;
+}
+
+.cards {
+  border: 1px solid black;
+  box-shadow: 5px 3px 10px black;
+  margin-top: 20px;
+  animation-delay: 1.5s;
+}
+
+.cards2 {
+  width: 78rem;
+  border: 1px solid black;
+  box-shadow: 5px 3px 10px black;
+  margin-top: 20px;
+  animation-delay: 3.5s;
+}
+.cards3 {
+  width: 82%;
+  border: 1px solid black;
+  box-shadow: 3px 3px 15px black;
+  margin-top: 20px;
+  animation-delay: 1.5s;
+}
+
+.btton {
+  width: 200px;
+  background: #f8851a;
+  color: #ffffff;
+  font-family: 'Titillium Web', sans-serif;
+  margin: auto;
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.fa-desktop {
+  font-size: 80px;
+
+}
+
+.form {
+  font-family: 'Titillium Web', sans-serif;
+  text-align: justify;
+  line-height: 35px;
+  background-color: #ffffff;
+  padding-top: 0px;
+}
+.lable {
+  padding: 0px 0px 0px 0px;
+}
+.lable1 {
+  padding: 5px 0px 0px 0px;
+}
+.input {
+  font-family: 'Titillium Web', sans-serif;
+  padding-left: 10px;
+  width: 100%;
+  border: 1px solid  darkgrey;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  background-color:#f1eeee;
+}
+.text {
+  width: 100%;
+  border: 1px solid  darkgrey;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  background-color:#f1eeee;
+}
+.btn-block {
+  background: #f8851a;
+  color: #ffffff;
+  font-family: 'Titillium Web', sans-serif;
+  margin: auto;
+  border: none;
+  width: 80%;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transition:2s;
+  
+  -moz-transition:2s;
+  -ms-transition:2s;
+  -o-transition:2s;
+  -webkit-transition:2s;
+}
+.myform {
+  line-height: 20px;
+}
+
+/* #logoutbutton {
+  position:relative;
+  right:0;
+  bottom:0;
+} */
+
+@media only screen and (max-width: 450px) {
+
+  .col-md-2 {
+    margin-top: 20px;
+  }
+  .cards {
+    width: 22rem;
+    margin: auto;
+  }
+
+  .cards2 {
+    width: 22rem;
+    border: 1px solid black;
+    box-shadow: 5px 3px 10px black;
+    margin-top: 20px;
+    animation-delay: 3.5s;
+  }
+
+
+  .content {
+    position: relative;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    text-align: center;
+    height: 30%;
+  }
+
+  .search {
+    margin-top: 40%;
+    margin-left: 10px;
+  }
+
+  .navbar-light .navbar-toggler {
+    margin-left: 42%;
+    border: 1px solid black;
+    float: left;
+  }
+
+  .search {
+    margin-top: 20%;
+    padding: 25px;
+  }
+  .imgcont {
+    background-image: url('../images/bedgirl.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent !important;
+    height: 800px;
+    top:0;
+    padding-top: 10px;
+    
+  } 
+
+}

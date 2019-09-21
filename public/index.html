@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Rutgers Coding Bootcamp Project_2">
+  <meta name="keywords" content="rutgers, coding, bootcamp, project, node, handlebars, express">
+  <meta name="author" content="Alex Mojnov, Cole Rudolph, Eric Fruelda, Julian, Carlos">
+
+  <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+  <!-- Google Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Gayathri|Livvic|Titillium+Web|Ubuntu&display=swap"
+    rel="stylesheet">
+
+  <title>Advanced Property Management</title>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <div class="container-fluid contnav">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light navigator">
+
+        <a class="navbar-brand navbrand animated slideInLeft slow" href="/">
+          <img id="logo" class="d-inline-block img-fluid" alt="Logo" src="./assets/images/logo.jpg">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mr-auto animated slideInRight slow">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/properties">PROPERTIES</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/tenants">TENANTS</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/contact">CONTACT</a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="/tenants">LOGIN</a>
+            </li>
+
+          </ul>
+      </nav>
+    </div>
+  </div>
+  <!-- End Navigation Bar -->
+
+  <!-- Main Content -->
+  <div class="container-fluid">
+
+    <video autoplay muted loop id="myVideo">
+      <source src="./assets/images/video.mp4" type="video/mp4">
+    </video>
+
+    <div class="row animated fadeInDown delay-5s">
+      <div class="col-md-12 search">
+        <h1 class="htitle">Welcome to Advanced Property Management</h1>
+    </div>
+  </div>
+
+  <div class="content">
+
+    <div class="row justify-content-center">
+      <div class="container-fluid">
+      <h3 class="hed3">Featured properties</h3>
+    </div>
+      <div class="col-sm-3">
+        <div class="card cards animated fadeInUp delay-2s">
+          <img src="./assets/images/img1.jpg" class="card-img-top" alt="New Property" >
+          <div class="card-body">
+            <p class="card-text">Spacious 2bdr. Appartment available in Jersey City.</p>
+          </div>
+          <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Request Info</button>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="card cards animated fadeInUp delay-3s">
+          <img src="./assets/images/img2.jpg" class="card-img-top" alt="New Property">
+          <div class="card-body">
+            <p class="card-text">Renovated 3bdr/2bth appartment is now available</p>
+          </div>
+          <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Request Info</button>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="card cards animated fadeInUp delay-4s">
+          <img src="./assets/images/img3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Renovated close to public transportation 1bdr appartment.</p>
+          </div>
+          <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Request Info</button>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="card cards animated fadeInUp delay-5s">
+          <img src="./assets/images/img4.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">New location 2brd appartment, newly renovated</p>
+          </div>
+        <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Request Info</button>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+  <!-- Contact Modal -->
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Request more information</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+          <form class="myform" action="send" method="POST" id="contactform">
+            <div class="row">
+              <div class="col-md">
+                <label class="lable">Name:</label><br>
+                <input class="form-control input" type="text" name="fname" id="fname" placeholder=" First name.." required><br>
+              </div>
+              <div class="col-md">
+                <label class="lable">Last Name:</label><br>
+                <input class="form-control input" type="text" name="lname" id="lname" placeholder=" Last Name.." required><br>
+              </div>
+            </div>
+    
+            <div class="row">
+              <div class="col-md">
+    
+                <label class="lable1">Email:</label><br>
+                <input class="form-control input" type="email" name="email" id="email" placeholder=" Your@email.." required> <br>
+              </div>
+              <div class="col-md">
+                <label class="lable1">Telephone:</label><br>
+                <input class="form-control input" type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                  placeholder="XXX-XXX-XXXX" required>
+              </div>
+            </div>
+    
+    
+            <label class="lable1">Message:</label><br>
+            <textarea class="form-control text" name="message" id="message" rows="3" cols="128" placeholder=" Tell me what you need"
+              required></textarea><br><br>
+    
+            <button id="sendmail" class="btn btn-primary btn-lg btn-block">Submit</button><br>
+    
+          </form>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="/js/mailer.js"></script>
+</body>
+
+</html>

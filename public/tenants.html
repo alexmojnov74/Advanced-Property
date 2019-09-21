@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Rutgers Coding Bootcamp Project_2">
+  <meta name="keywords" content="rutgers, coding, bootcamp, project, node, handlebars, express">
+  <meta name="author" content="Alex Mojnov, Cole Rudolph, Eric Fruelda, Julian, Carlos">
+
+  <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+  <!-- Google Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Gayathri|Livvic|Titillium+Web|Ubuntu&display=swap"
+    rel="stylesheet">
+
+  <title>Advanced Property Management</title>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <div class="container-fluid contnav">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light navigator">
+
+        <a class="navbar-brand navbrand animated slideInLeft slow" href="/">
+          <img id="logo" class="d-inline-block img-fluid" alt="Logo" src="./assets/images/logo.jpg">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mr-auto animated slideInRight slow">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/properties">PROPERTIES</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/tenants">TENANTS</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/contact">CONTACT</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="/tenants">LOGIN</a>
+            </li>
+            
+          </ul>
+      </nav>
+    </div>
+  </div>
+  <!-- End Navigation Bar -->
+
+  <!-- Main Content -->
+
+  <div class="container-fluid imgcont">
+   
+      <div class="row justify-content-center">
+        <div class="col-md-4 col3 animated fadeInUp slow delay">
+          <div class="jumbotron tent">
+            <h2>Online Portal</h2>
+            <h4>Pay rent, submit maintenance requests, and view your account from anywhere.</h4>
+          </div>
+        </div>
+
+        <div class="col-md-4 col3 animated fadeInUp slow delay">
+            <div class="jumbotron tent1">
+                <form action="/login" method="POST">
+                  <div class="loginput">
+                      <label for="email">Your Email Address</label>
+                      <input class="form-control" type="email" id="email" name="email"
+                      required>
+                  
+                  </div>
+                 
+                  <div class="loginput">
+                      <label for="password">Password</label>
+                      <input class="form-control" type="password" id="password" name="password"
+                      required>
+                      
+                  </div>
+                  <br/>
+                  
+                  <div>
+            
+                  <button type="submit" class="btn btn-primary btn-lg btn-block" style="margin-bottom: 10px;">Login Now</button>
+                  </div>
+              </form>
+              
+              <a style="color:blue" href="/register">Create an Account</a>
+                <!-- <i class="fas fa-desktop"></i>
+                <br>
+                <br>
+                <h4>Online Portal LogIn</h4>
+                <br>
+                
+                <br>
+                <h5><a style="color:blue;" href="">Or Create an account</a></h5> -->
+            </div>
+          </div>
+
+      </div>
+    
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

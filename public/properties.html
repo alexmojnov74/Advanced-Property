@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Rutgers Coding Bootcamp Project_2">
+  <meta name="keywords" content="rutgers, coding, bootcamp, project, node, handlebars, express">
+  <meta name="author" content="Alex Mojnov, Cole Rudolph, Eric Fruelda, Julian">
+
+  <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+  <!-- Google Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Gayathri|Livvic|Titillium+Web|Ubuntu&display=swap"
+    rel="stylesheet">
+
+  <title>Advanced Property Management</title>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <div class="container-fluid contnav">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light navigator">
+
+        <a class="navbar-brand navbrand animated slideInLeft slow" href="/">
+          <img id="logo" class="d-inline-block img-fluid" alt="Logo" src="./assets/images/logo.jpg">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mr-auto animated slideInRight slow">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/properties">PROPERTIES</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/tenants">TENANTS</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/contact">CONTACT</a>
+            </li>
+
+          </ul>
+      </nav>
+    </div>
+  </div>
+  <!-- End Navigation Bar -->
+
+  <!-- Main Content -->
+  <div class="container-fluid">
+    <!-- first row -->
+    <div class="row justify-content-center">
+
+      <div class="col-md-3">
+        <div class="card cards animated fadeInDown slow delay">
+          <img src="./assets/images/1.jpg" class="card-img-top" alt="New Property">
+          <div class="card-body">
+            <h5 class="card-title">5500 Jersey Avenue, Jersey City, 07306</h5>
+            <div class="row">
+              <div class="col-sm-6">
+                <h5>$1800/mo</h5>
+              </div>
+              <div class="col-sm-6">
+                <h6>2bds | 1ba | 1500sq.ft</h6>
+              </div>
+            </div>
+            <div class="btton">
+              <a href="#" class="btn btn-primary btton" data-toggle="modal" data-target="#applyModal"
+                data-apply="&nbsp;5500 Jersey Avenue, Jersey City, 07306">APPLY NOW</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card cards animated fadeInDown slow delay">
+          <img src="./assets/images/2.jpg" class="card-img-top" alt="New Property">
+          <div class="card-body">
+            <h5 class="card-title">3100 Main Street., Hoboken, 07308</h5>
+            <div class="row">
+              <div class="col-sm-6">
+                <h5>$1900/mo</h5>
+              </div>
+              <div class="col-sm-6">
+                <h6>1bds | 1ba | 1200sq.ft</h6>
+              </div>
+            </div>
+            <div class="btton">
+              <a href="#" class="btn btn-primary btton" data-toggle="modal" data-target="#applyModal"
+                data-apply="&nbsp;3100 Main St., Hoboken, 07308">APPLY NOW</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card cards animated fadeInDown slow delay">
+          <img src="./assets/images/3.jpg" class="card-img-top" alt="New Property">
+          <div class="card-body">
+            <h5 class="card-title">1400 Pavonia Ave, Jersey City, 07306</h5>
+            <div class="row">
+              <div class="col-sm-6">
+                <h5>$2100/mo</h5>
+              </div>
+              <div class="col-sm-6">
+                <h6>2bds | 2ba | 1500sq.ft</h6>
+              </div>
+            </div>
+            <div class="btton">
+              <a href="#" class="btn btn-primary btton" data-toggle="modal" data-target="#applyModal"
+                data-apply="&nbsp;1400 Pavonia Ave, Jersey City, 07306">APPLY NOW</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card cards animated fadeInDown slow delay">
+          <img src="./assets/images/4.jpg" class="card-img-top" alt="New Property">
+          <div class="card-body">
+            <h5 class="card-title">5500 Jersey Avenue, Jersey City, 07306</h5>
+            <div class="row">
+              <div class="col-sm-6">
+                <h5>$1800/mo</h5>
+              </div>
+              <div class="col-sm-6">
+                <h6>2bds | 1ba | 1500sq.ft</h6>
+              </div>
+            </div>
+            <div class="btton">
+              <a href="#" class="btn btn-primary btton" data-toggle="modal" data-target="#applyModal"
+                data-apply="&nbsp;5500 Jersey Avenue, Jersey City, 07306">APPLY NOW</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+          <div class="card cards animated fadeInUp slow delay">
+            <img src="./assets/images/5.jpg" class="card-img-top" alt="New Property">
+            <div class="card-body">
+              <h5 class="card-title">830 Magnolia Ave, Jersey City, 07306</h5>
+              <div class="row">
+                <div class="col-sm-6">
+                  <h5>$1600/mo</h5>
+                </div>
+                <div class="col-sm-6">
+                  <h6>1bds | 1ba | 1000sq.ft</h6>
+                </div>
+              </div>
+              <div class="btton">
+                <a href="#" class="btn btn-primary btton" data-toggle="modal" data-target="#applyModal"
+                  data-apply="&nbsp;830 Magnolia Ave, Jersey City, 07306">APPLY NOW</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card cards animated fadeInUp slow delay">
+              <img src="./assets/images/6.jpg" class="card-img-top" alt="New Property">
+              <div class="card-body">
+                <h5 class="card-title">5500 Jersey Avenue, Jersey City, 07306</h5>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <h5>$2000/mo</h5>
+                  </div>
+                  <div class="col-sm-6">
+                    <h6>3bds | 2ba | 1800sq.ft</h6>
+                  </div>
+                </div>
+                <div class="btton">
+                  <a href="#" class="btn btn-primary btton" data-toggle="modal" data-target="#applyModal"
+                    data-apply="&nbsp;5500 Jersey Avenue, Jersey City, 07306">APPLY NOW</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+              <div class="card cards animated fadeInUp slow delay">
+                <img src="./assets/images/7.jpg" class="card-img-top" alt="New Property">
+                <div class="card-body">
+                  <h5 class="card-title">3300 Jersey Avenue, Jersey City, 07306</h5>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <h5>$1800/mo</h5>
+                    </div>
+                    <div class="col-sm-6">
+                      <h6>2bds | 1ba | 1500sq.ft</h6>
+                    </div>
+                  </div>
+                  <div class="btton">
+                    <a href="#" class="btn btn-primary btton" data-toggle="modal" data-target="#applyModal"
+                      data-apply="&nbsp;3300 Jersey Avenue, Jersey City, 07306">APPLY NOW</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card cards animated fadeInUp slow delay">
+                  <img src="./assets/images/8.jpg" class="card-img-top" alt="New Property">
+                  <div class="card-body">
+                    <h5 class="card-title" id="address">555 Main Street, Jersey City, 07306</h5>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <h5 id="price">$1800/mo</h5>
+                      </div>
+                      <div class="col-sm-6">
+                        <h6>2bds | 1ba | 1500sq.ft</h6>
+                      </div>
+                    </div>
+                    <div class="btton">
+                      <a href="#" class="btn btn-primary btton" data-toggle="modal" data-target="#applyModal"
+                        data-apply="&nbsp;555 Main Street., Jersey City, 07306">APPLY NOW</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+  </div>
+  
+    <!-- Modal Start -->
+
+    <div class="modal fade" id="applyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="applyModalLabel">Apply for &nbsp;</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+
+            <form class="myform" action="/api/tenants" method="POST">
+              <div class="row">
+                <div class="col-md">
+                  <label class="lable">Name:</label><br>
+                  <input class="form-control input" type="text" name="fname" id="fname" placeholder=" First name.."
+                    required><br>
+                </div>
+                <div class="col-md">
+                  <label class="lable">Last Name:</label><br>
+                  <input class="form-control input" type="text" name="lname" id="lname" placeholder=" Last Name.." required><br>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md">
+
+                  <label class="lable1">Email:</label><br>
+                  <input class="form-control input" type="email" id="email" name="email" placeholder=" Your@email.." required>
+                  <br>
+                </div>
+                <div class="col-md">
+                  <label class="lable1">Telephone:</label><br>
+                  <input class="form-control input" type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    placeholder="XXX-XXX-XXXX" required>
+                </div>
+              </div>
+
+
+              <label class="lable1">Message:</label><br>
+              <textarea id="message" class="form-control text" name="message" rows="3" cols="128"
+                placeholder=" Tell me what you need" required></textarea><br><br>
+
+              <button id="apply" class="btn btn-primary btn-lg btn-block">Submit</button><br>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script>
+    $('#applyModal').on('show.bs.modal', function (event) {
+      var button = $(event.relatedTarget) // Button that triggered the modal
+      var property = button.data('apply') // Extract info from data-* attributes
+      // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+      // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+      var modal = $(this)
+      console.log(modal)
+      modal.find('.modal-title').text('Apply for' + property)
+    })
+
+    $('#apply').on('click', function(event) {
+      event.preventDefault()
+      application = {
+        address: $('#address').text(),
+        price: $('#price').text(),
+        firstname: $('#fname').val(),
+        lastname: $('#lname').val(),
+        email: $('#email').val(),
+        phone: $('#phone').val(),
+        message: $('#message').val(),
+      }
+
+      $.ajax ({
+        type: "POST",
+        url: "/api/tenants",
+        data: application
+      }).then(function(data) {
+        $("#applyModal").modal('hide')
+      })
+    })
+
+  </script>
+</body>
+
+</html>

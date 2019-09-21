@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="Rutgers Cooding Bootcamp Project_2">
+	<meta name="keywords" content="rutgers, cooding, bootcamp, project, node, handlebars, express">
+	<meta name="author" content="Alex Mojnov, Cole Rudolph, Eric Fruelda, Julian, Carlos">
+
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+	<!-- Google Fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Gayathri|Livvic|Titillium+Web|Ubuntu&display=swap"
+		rel="stylesheet">
+
+	<title>Advanced Property Management</title>
+</head>
+
+<body>
+
+
+	<!-- Navigation Bar -->
+	<div class="container-fluid contnav">
+		<div class="container">
+			<nav class="navbar navbar-expand-lg navbar-light navigator">
+
+				<a class="navbar-brand navbrand animated slideInLeft slow" href="/">
+					<img id="logo" class="d-inline-block img-fluid" alt="Logo" src="./assets/images/logo.jpg">
+				</a>
+
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto mr-auto animated slideInRight slow">
+						<li class="nav-item active">
+							<a class="nav-link" href="/">HOME</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/properties">PROPERTIES</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="/tenants">TENANTS</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="/contact">CONTACT</a>
+						</li>
+
+						
+					</ul>
+			</nav>
+		</div>
+	</div>
+	<!-- End Navigation Bar -->
+	<div class="container">
+		<div class="row justify-content-md-center mt-4 mb-4 ">
+			<div class="col-md-2">
+				<a class="btn btn-light btton" href="/tenant_manager">Go to Tenants Mnagment</a>
+			</div>
+
+		</div>
+		<div class="row ">
+
+
+			<div class="container-fluid">
+				<h1>Tenants</h1>
+
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th>Phone</th>
+							<th>Issue</th>
+							<th>&nbsp;</th>
+							
+
+						</tr>
+					</thead>
+					<tbody>
+						<tr id="form-row">
+
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	</d>
+	<!-- Custom Script -->
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+	<script>
+		$.ajax({
+			type: "GET",
+			url: "/api/tickets",
+		})
+			.then(function (data) {
+				for (var i = 0; i < data.length; i++) {
+					$('table').append(`<tr>
+						<td>${data[i].phone}</td>
+						<td>${data[i].body}</td>
+						<td><button class="butdelete" id="${data[i].id}">Resolved</button></td>
+						</tr>`)
+				}
+			})
+
+		$(document).on("click", ".butdelete", function (event) {
+			event.preventDefault()
+			$.ajax({
+				type: "DELETE",
+				url: `/api/tickets/${$(this).attr('id')}`
+			}).then(function(data) {
+				location.reload(true);
+			})
+		})
+
+	</script>
+<form action = "/logout?_method=DELETE" method="POST" id="logoutbutton">
+    <button type ="submit">Logout</button>
+</form>
+
+
+</body>
+
+</html>
