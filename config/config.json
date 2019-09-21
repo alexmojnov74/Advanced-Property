@@ -1,25 +1,25 @@
 {
   "development": {
-    "username": "root",
-    "password": "PASSPASS",
-    "database": "propmanage",
-    "host": "127.0.0.1",
+    "username": "pi4jeynxp159h4gd",
+    "password": "mwko7bthf3ecdusk",
+    "database": "ojzxf3nc6p7eqbm1",
+    "host": "s9xpbd61ok2i7drv.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "port": 3306,
     "dialect": "mysql"
   },
   "test": {
-    "username": "root",
-    "password": "PASS",
-    "database": "database_test",
-    "host": "127.0.0.1",
+    "username": "pi4jeynxp159h4gd",
+    "password": "mwko7bthf3ecdusk",
+    "database": "ojzxf3nc6p7eqbm1",
+    "host": "s9xpbd61ok2i7drv.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "port": 3306,
     "dialect": "mysql"
   },
   "production": {
-    "username": "PASS",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
+    "username": "pi4jeynxp159h4gd",
+    "password": "mwko7bthf3ecdusk",
+    "database": "ojzxf3nc6p7eqbm1",
+    "host": "s9xpbd61ok2i7drv.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "port": 3306,
     "dialect": "mysql"
   }
