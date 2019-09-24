@@ -197,8 +197,8 @@ app.post("/api/send", function(req, res){
   host: 'smtp.mailgun.org',
   port: 587,
   auth: {
-      user: 'postmaster@sandboxf87a39b38f6e4a9088a3f7e9479c4232.mailgun.org', // generated ethereal user
-      pass: 'd547583d60091c4905ad4f072b756f9f-bbbc8336-9e426c50'  // generated ethereal password
+      user: 'user', // generated ethereal user
+      pass: 'password'  // generated ethereal password
   },
   tls:{
     rejectUnauthorized:false
@@ -207,8 +207,8 @@ app.post("/api/send", function(req, res){
 
 // setup email data with unicode symbols
 const mailOptions = {
-    from: '"Message Delivery" <alexmojnov@gmail.com>', // sender address
-    to: 'alexmojnov@gmail.com', // list of receivers
+    from: '"Message Delivery" <youremail@gmail.com>', // sender address
+    to: 'youremail@gmail.com', // list of receivers
     subject: 'Contcat Form Request', // Subject line
     text: 'Hello world?', // plain text body
     html: output2 // html body
